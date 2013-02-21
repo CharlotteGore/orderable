@@ -4,6 +4,8 @@
   Creates a drag/drop reorderable list. Callbacks for reorder and delete. Helpful utilities
   to help keep a separate array in sync with the operations performed by the user. 
 
+  A class of 'moving' is added to elements being moved to help styling.
+
 ## Installation
 
     $ component install charlottegore/orderable
