@@ -1,0 +1,13 @@
+{
+  "name": "orderable",
+  "repo": "charlottegore/orderable",
+  "description": "Creates a drag/drop reorderable list",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
