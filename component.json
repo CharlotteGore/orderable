@@ -4,7 +4,12 @@
   "description": "Creates a drag/drop reorderable list",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "component/jquery" : "*",
+    "charlottegore/draggy" : "*",
+    "manuelstofer/each" : "*",
+    "component/indexof" : "*"
+    },
   "development": {},
   "license": "MIT",
   "scripts": [
