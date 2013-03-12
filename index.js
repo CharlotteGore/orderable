@@ -24,7 +24,7 @@ var Reorderable = function( ul , keys ){
 
     this.callbacks = {
     	onReorder : function(e, i){},
-    	onDelete : function(e){}
+    	onDelete : function(e, i){}
     }
 
     var index = 0;
@@ -55,7 +55,7 @@ var Reorderable = function( ul , keys ){
 
     				each(ul.find('li'), function(li){
 
-    					currentOrder.push( $(li).data()._id );
+						currentOrder.push( $(li).data()._id );
 
     				});
 
@@ -100,9 +100,9 @@ var Reorderable = function( ul , keys ){
 
     				}else {
 
-    					self.callbacks.onDelete(itemBeingMoved);
-
     					el.remove();
+    					placeholder.remove();
+    					self.callbacks.onDelete(itemBeingMoved, oldIndex);
 
     				}
 
