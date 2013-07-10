@@ -81,7 +81,7 @@ var Reorderable = function( ul , keys ){
 
 	    				newOrder = [];
 
-	    				each(ul.find('li'), function(li){
+	    				each(ul.children('li'), function(li){
 
 	    					newOrder.push( $(li).data()._id );
 
