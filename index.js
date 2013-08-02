@@ -19,7 +19,7 @@ var Reorderable = function( ul , keys ){
     var position = ul.offset();
     var height = ul.outerHeight();
     var width = ul.outerWidth();
-    var lis = ul.find('li');
+    var lis = ul.children('li');
     var placeholder = $('<li class="placeholder"></li>');
 
     this.callbacks = {
